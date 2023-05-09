@@ -1,0 +1,257 @@
+What is PHP most used for?
+>> Allow user to access individual cookies
+>> Database manipulation operations
+>> Form handling, file handling and email integration concepts are used widely
+
+Is PHP a case-sensitive scripting language?
+>> Yes for Variables
+>> No for user defined functions
+
+What is the meaning of PEAR in PHP?
+>> PEAR stands for PHP Extensions and Application Respository
+>> It is a framework and acting repositories that host all resulable PHP components
+>> And also have some php libraries and provides a simple interface packages
+
+How is a PHP script executed?
+>> Php can be executed using CLI with the syntax (php filenme.php)
+
+How is a PHP script executed?
+>> Array -> (Named and ordered collection of data)
+>> Boolean -> Logical value (True or False)
+>> Null -> Spl datatype support only NULL data
+>> Double -> Floating points
+>> Integer -> Number without floating points
+>> String -> Sequence of character
+>> Object -> Instance of class that contain the data and functions
+>> Resources --> Special variables that holds reference to external resources
+
+What are the variable-naming rules you should follow in PHP?
+>> Variables can only begin with letters or underscores.
+>> Special characters such as +, %, -, &, etc. cannot be used
+
+What are the main characteristics of a PHP variable?
+>> Variable can be declare before the value assigned
+>> 
+
+How are constants defined in PHP?
+>> Constants are like variables except that once they are defined they cannot be changed or undefined.
+>> define("GREETING", "Welcome to W3Schools.com!");
+>> define("GREETING", "Welcome to W3Schools.com!");
+
+What is the meaning of break and continue statements in PHP?
+>> Break: This statement is used in a looping construct to terminate the execution of the iteration and to immediately execute the next snippet of code outside the block of the looping construct.
+
+>> Continue: This statement is used to skip the current iteration of the loop and continue to execute the next iteration until the looping construct is exited.
+
+What are some of the popular frameworks in PHP?
+>> CodeIgniter
+>> CakePHP
+>> Laravel
+>> Zend
+>> Yii 2
+
+What is the use of the final class and the final method in PHP?
+>> The ‘final’ keyword, if present in a declaration, denotes that the current method does not support overriding by other classes. This is used when there is a requirement to create an immutable class.
+
+>> Note: Properties cannot be declared as final. It is only methods and classes that get to be final.
+
+
+How does JavaScript interact with PHP?
+>> JavaScript is a client-side programming language, while PHP is a server-side scripting language. PHP has the ability to generate JavaScript variables, and this can be executed easily in the browser, thereby making it possible to pass variables to PHP using a simple URL
+
+Does PHP interact with HTML?
+>> Yes
+>> PHP scripts have the ability to generate HTML mode and move around information very easily.
+>> PHP is a server-side scripting language, while HTML is a client-side language. This interaction helps bridge the gaps and use the best of both languages.
+
+
+What are the types of arrays supported by PHP?
+>> Indexed arrays: These are arrays that contain numerical data. Data access and storage are linear.
+>> Associative arrays: There are arrays that contain strings for indexing elements.
+>> Multidimensional arrays: These are arrays that contain more than one index and dimension.
+
+Differentiate between require() and require_once() functions.
+
+
+Is it possible to set infinite execution time in PHP?
+>> set_time_limit(0)
+>> This can also be executed in the php.ini file if not at the beginning of the script.
+
+Most used method for hashing passwords in PHP
+>> The crypt() function is widely used for this functionality as it provides a large amount of hashing algorithms that can be used. These algorithms include md5, sha1 or sha256
+
+What are sessions and cookies in PHP?
+>> Sessions are global variables that are stored on the server in the architecture. Every single session is tagged with a unique server ID that is later used to work with the storage and retrieval of values.
+
+>> Cookies are entities used to identify unique users in the architecture. It is a small file that the server plants into the client system. This is done to get useful information from the client for the development of various aspects of the server.
+
+Is typecasting supported in PHP?
+>> Yes
+>> (int), (integer): Cast to integer
+>> (bool), (boolean): Cast to boolean
+>> (float), (double), (real): Cast to float
+>> (string): Cast to string
+>> (array): Cast to array
+>> (object): Cast to object
+
+What is the use of session_start() and session_destroy() functions?
+>> the session_start() function is used to start a new session. However, it can also resume an existing session if it is stopped. In this case, the return will be the current session if resumed.
+
+>> The session_destroy() function is mostly used to destroy all of the session variables as shown below:
+
+How can you open a file in PHP?
+fopen()
+
+$file1 = fopen("myfile1.txt","r"); //Open for reading
+$file2 = fopen("myfile2.txt","w"); //Open for writing
+$file3 = fopen("myfile3.txt","r+"); //Open for reading and writing
+
+What are the different types of PHP errors?
+>> Notice: A notice is a non-critical error that is not displayed to the user.
+>> Warning: A warning is an error that is displayed to the user while the script is running.
+>> Fatal error: This is the most critical type of error. A fatal error will cause immediate termination of the script.
+
+How can you get the IP address of a client in PHP?
+>> $_SERVER["REMOTE_ADDR"];
+
+What is the use of $message and $$message in PHP?
+>> $message --> prints its own value
+>> $$message --> prints value of value of $message
+
+Differentiate between GET and POST methods in PHP.
+GET: The GET method can only send a maximum of 1024 characters simultaneously
+POST: There is no restriction on the data size, By deault 8mb
+
+GET: GET does not support sending binary data
+POST: POST supports binary data as well as ASCII
+
+GET: QUERY_STRING env variable is used to access the data that is sent
+POST: The HTTP protocol and the header are used to push the data
+
+GET: The $_GET associative array is used to access the sent information
+POST: The $_POST associative array is used to access the sent information here
+
+
+What is the use of lambda functions in PHP?
+>> lambda function is used to first store data into a variable and then to pass it as arguments for the usage in other methods or functions
+>> EX:
+	>> 	$input = array(2, 5, 10);
+		$output = array_filter($input, function ($x) { return $x > 2; });
+>> Definition
+	>> function ($x) { return $x > 2; });
+
+Differentiate between compile-time exception and runtime exception in PHP.
+>> As the name suggests, if there is an occurrence of any sort of exception while the script is being compiled, it is called a compile-time exception. The FileNotFoundException is a good example of a compile-time exception.
+
+>> An exception that interrupts the script while running is called a runtime exception. The ArrayIndexOutOfBoundException is an example of a runtime exception.
+
+How is a URL connected to PHP?
+>> The term ‘cURL’ stands for client-side URL, allowing users to connect to a URL and pick up information from that page to display.
+
+What are the steps to create a new database using MySQL and PHP?
+>> First, a connection is established to the MySQL server using the PHP script.
+>> Second, the connection is validated. If the connection is successful, then you can write a sample query to verify.
+>> Queries that create the database are input and later stored into a string variable.
+>> Then, the created queries are executed one after the other.
+
+What is Zend Engine?
+>> Zend Engine is used internally by PHP as a compiler and runtime engine. PHP Scripts are loaded into memory and compiled into Zend OPCodes.
+>> These OPCodes are executed and the HTML generated is sent to the client.
+>> The Zend Engine provides memory and resource management and other standard services for the PHP language. Its performance, reliability, and extensibility have played a significant role in PHP’s increasing popularity.
+
+What is htaccess? Why do we use it and where?
+>> The .htaccess file is used for URL rewrite.
+>> It is used to make the site password-protected.
+>> It can restrict some IP addresses so that on these restricted IP addresses, the site will not open.
+
+What are magic methods?
+__construct()
+__destruct()
+__set()
+__get()
+__call()
+__toString()
+__sleep()
+__wakeup()
+__isset()
+__unset()
+__autoload()
+__clone()
+
+Explain soundex() and metaphone().
+>> The soundex() function calculates the soundex key of a string. A soundex key is a 4-character long alphanumeric string that represents the English pronunciation of a word. The soundex() function can be used for spelling applications.
+
+<?php 
+$str= “hello”;
+Echo soundex($str);
+?>
+
+>> The metaphone() function calculates the metaphone key of a string. A metaphone key represents how a string sounds if it is pronounced by an English (native) person. This function can also be used for spelling applications.
+
+<?php 
+echo metaphone(“world”);
+?>
+
+What is Memcache?
+Memcache is a technology that caches objects in memory such that a web application can get to them really fast. It is used by sites, such as Digg, Facebook, and NowPublic, and is widely recognized as an essential ingredient in scaling any LAMP.
+
+What is PDO in PHP?
+>> PDO stands for PHP Data Object.
+>> It is a set of PHP extensions that provide a core PDO class and database, specific drivers
+
+
+Explain the difference between exec() vs system() vs passthru()?
+>> exec() is for calling a system command, and perhaps dealing with the output yourself.
+>> system() is for executing a system command and immediately displaying the output - presumably text.
+>> passthru() is for executing a system command which you wish the raw return from - presumably something binary.
+
+
+What is the use of strip_tags() method?
+>> strip_tags() function is used to retrieve the string from a text by omitting HTML, XML and PHP tags.
+
+
+difference between substr() and strstr()?
+	echo substr("Computer Programming",9,7); //Returns “Program”
+	echo substr("Computer Programming",9); //Returns “Programming”
+
+	echo strstr("Learning Laravel 5!","Laravel"); //Returns Laravel 5!
+	echo strstr("Learning Laravel 5!","Laravel",true); //Returns Learning
+
+What is meant by public, private, protected, static and final scopes?
+>> Public– Variables, classes, and methods which are declared public can be accessed from anywhere.
+>> Private– Variables, classes and methods which are declared private can be accessed by the parent class only.
+>> Protected– Variables, classes, and methods which are declared protected can be accessed by the parent and child classes only.
+>> Static– The variable which is declared static can keep the value after losing the scope.
+>> Final– This scope prevents the child class to declare the same item again.
+
+
+How can image properties be retrieved in PHP?
+>> getimagesize() – It is used to get the image size.
+>> exif_imagetype() – It is used to get the image type.
+>> imagesx() – It is used to get the image width.
+>> imagesy() – It is used to get the image height.
+
+What is the difference between abstract class and interface?
+>> Abstract classes are used for closely related objects and interfaces are used for unrelated objects.
+>> PHP class can implement multiple interfaces but can’t inherit multiple abstract classes.
+>> Common behavior can be implemented in the abstract class but not an interface.
+
+What is garbage collection?
+>> It is an automated feature of PHP.
+>> When it runs, it removes all session data which are not accessed for a long time. It runs on /tmp directory which is the default session directory.
+
+PHP directives which are used for garbage collection include:
+	session.gc_maxlifetime (default value, 1440)
+	session.gc_probability (default value, 1)
+	session.gc_divisor (default value, 100)
+
+Which library is used in PHP to do various types of Image work?
+>> Using the GD library, various types of image work can be done in PHP. Image work includes rotating images, cropping an image, creating image thumbnail, etc.
+
+What are Traits?
+Traits are a mechanism that allows you to create reusable code in languages like PHP where multiple inheritance is not supported. A Trait cannot be instantiated on its own.
+
+It’s important that a developer knows the powerful features of the language (s)he is working on, and Trait is one of such features.
+
+CSPRNG functions
+>> 'CSPRNG' functions are basically used to generate random strings and integers. Generated random numbers and strings by the computer program have many uses in the field of cryptography, science, art, statistics, gambling, gaming, etc.

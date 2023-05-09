@@ -1,0 +1,54 @@
+ALTER TABLE table_name DROP column name;
+
+ADD COLUMN engine VARCHAR(80) AFTER colour;
+
+SELECT something FROM tablename INNER JOIN another table ON condition;
+
+
+
+· MyISAM – MyISAM is the default storage engine for MySQL. It extends the former ISAM storage engine. MyISAM offers big storage, up to 256TB! The tables can also be compressed to get extra storage. MyISAM tables are not transaction-safe. 
+
+· InnoDB – InnoDB is the most optimal while choosing an engine to drive performance. InnoDB is a transaction-safe engine. Hence it is ACID-compliant and can efficiently restore your database to the most stable state in case of a crash.
+
+
+What are Procedures in MySQL?
+
+This is a MySQL basic interview questions. A thorough understanding of this is very important. 
+
+Procedures (or stored procedures) are subprograms, just like in a regular language, embedded in the database. A stored procedure consists of a name, SQL statement(s) and parameters. It utilises the caching in MySQL and hence saves time and memory, just like the prepared statements. 
+
+
+What is a trigger in MySQL?
+
+A trigger is a table-associated database object in MySQL. It is activated when a specified action takes place. 
+
+A trigger can be invoked after or before the event takes place. It can be used on INSERT, DELETE, and UPDATE. It uses the respective syntax to define the triggers. For example, BEFORE INSERT, AFTER DELETE, etc.
+
+
+Which drivers are necessary for MySQL?
+
+There are many types of drivers in MySQL. Mostly they are used for connections with different computational languages. Some of them are listed below:
+
+· PHP Driver
+
+· JDBC
+
+· OBDC
+
+· Python Driver
+
+· C – Wrapper
+
+· Perl and Ruby Drivers
+
+
+What is a LIKE statement? Explain % and _ in LIKE.
+
+While using filters in commands like SELECT, UPDATE, and DELETE, conditions might require a pattern to detect. LIKE is used to do just that. LIKE has two wildcard characters, namely % (percentage) and _ (underscore). Percentage(%) matches a string of characters, while underscore matches a single character. 
+
+
+What is a LIKE statement? Explain % and _ in LIKE.
+
+While using filters in commands like SELECT, UPDATE, and DELETE, conditions might require a pattern to detect. LIKE is used to do just that. LIKE has two wildcard characters, namely % (percentage) and _ (underscore). Percentage(%) matches a string of characters, while underscore matches a single character. 
+
+

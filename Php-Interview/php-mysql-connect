@@ -1,0 +1,19 @@
+$mysqli = mysqli_connect("localhost","username","password");
+$mysqli = new mysqli("localhost","username","password");
+
+
+$result=mysqli_query($DBconnection,$query);
+
+mysqli_fetch_array()
+mysqli_fetch_row()
+mysqli_fetch_object()
+
+mysqli_pconnect() --> function is used for making a persistent connection with the database that does not terminate when the script ends.
+
+mysqli_connect() function searches any existing persistence connection first and if no persistence connection exists,
+
+$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+echo "Name is $row[0] 
+";
+echo "Email is $row['email'] 
+";
