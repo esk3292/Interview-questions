@@ -1,0 +1,41 @@
+$GLOBALS
+>> If we declare a value inside the function it won't take, it will take from global declaration
+	<?php 
+		$x = 75;
+		$y = 25; 
+
+		function addition() {
+			$x = 5;
+			$y = 3;
+		  $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
+		}
+
+		addition();
+		echo $z;
+	?>
+
+$_SERVER
+>> holds information about headers, paths, and script locations.
+	$_SERVER['PHP_SELF'] => return the filename of the current execution script
+	$_SERVER['SERVER_ADDR'] => Returns the IP address of the host server
+	$_SERVER['SERVER_NAME'] => Returns the name of the host server
+	$_SERVER['HTTP_HOST'] => Returns the Host header from the current request
+	$_SERVER['HTTP_REFERER'] => Returns the complete URL of the current page
+	$_SERVER['HTTP_USER_AGENT'] => Returns the browser details of desktop and mobile
+	$_SERVER['SCRIPT_NAME'] => 
+	$_SERVER['REMOTE_ADDR']	=> Returns the IP address from where the user is viewing the current page
+	$_SERVER['REMOTE_HOST']	=> Returns the Host name from where the user is viewing the current page
+
+$_REQUEST
+>> collect all post, get and header values
+$_POST
+>> Send the data from html with hidden from customer
+$_GET
+>> Send the data from html with shows to the customer in the url
+$_FILES
+>> for uploading images, files, etc..
+$_ENV
+>> to set environment of local, staage or production
+$_COOKIE
+
+$_SESSION

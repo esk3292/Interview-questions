@@ -1,3 +1,60 @@
+What are the tables in MySQL? Explain the types.
+>> MySQL stores everything in logical tables. Tables can be thought of as the core storage structure of MySQL. And hence tables are also known as storage engines. Here are the storage engines provided by MySQL
+
+MyISAM – MyISAM is the default storage engine for MySQL. It extends the former ISAM storage engine. MyISAM offers big storage, up to 256TB! The tables can also be compressed to get extra storage. MyISAM tables are not transaction-safe.
+
+MERGE – A MERGE table is a virtual table that consolidates different MyISAM tables that have a comparable structure to one table. MERGE tables use the indexes of the base tables, as they do not have indexes of their own.
+
+ARCHIVE – As the name suggests, Archive helps in archiving the tables by compressing them, in-turn reducing the storage space. Hence, you can store a lot of records with the Archive. It uses the compression-decompression procedure while writing and reading the table records. It is done using the Zlib library.
+
+CSV – This is more like a storage format. CSV engine stores the values in the Comma-separated values (CSV) format. This engine makes it easier to migrate the tables into a non-SQL pipeline.
+
+InnoDB – InnoDB is the most optimal while choosing an engine to drive performance. InnoDB is a transaction-safe engine. Hence it is ACID-compliant and can efficiently restore your database to the most stable state in case of a crash.
+
+Memory– Memory tables were formerly known as HEAP. With memory tables, there can be a performance boost as the tables are stored in the memory. But it does not work with large data tables due to the same reason.
+
+Federated – Federated tables allow accessing remote MySQL server tables. It can be done without any third-party integration or cluster technology.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ALTER TABLE table_name DROP column name;
 
 ADD COLUMN engine VARCHAR(80) AFTER colour;

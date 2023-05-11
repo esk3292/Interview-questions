@@ -255,3 +255,18 @@ It’s important that a developer knows the powerful features of the language (s
 
 CSPRNG functions
 >> 'CSPRNG' functions are basically used to generate random strings and integers. Generated random numbers and strings by the computer program have many uses in the field of cryptography, science, art, statistics, gambling, gaming, etc.
+
+PHP Operators
+>> Arithmetic operators
+>> Assignment operators
+>> Comparison operators
+>> Increment/Decrement operators
+>> Logical operators
+>> String operators
+>> Array operators
+>> Conditional assignment operators
+
+PHP Functions
+PHP Built-in Functions
+	>> Array, Date, string, error, math
+PHP User Defined Functions

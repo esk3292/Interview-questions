@@ -1,0 +1,24 @@
+String Functions
+
+crypt() - It is used to create hashing string One-way.
+echo() - 
+explode() - It is used to break a string into an array.
+htmlentities() - It is used to convert character to HTML entities.
+html_entity_decode()  - It is used to convert HTML entities to characters.
+htmlspecialchars() - Converts the special characters to html entities.
+htmlspecialchars_decode() - Converts the html entities back to special characters.
+implode() - Returns a string from the elements of an array.
+md5() - Calculates the MD5 hash of a string
+rtrim() - Removes whitespace or other characters from the right side of a string
+str_replace() - Replaces some characters in a string (case-sensitive) {{ str_replace("replaceKey","replaceWord","Replace String") }}
+str_split() - Splits a string into an array
+str_word_count() - Count the number of words in a string
+strip_tags() - Strips HTML and PHP tags from a string
+strlen() - Returns the length of a string
+strrev() - Reverses a string
+strstr() - Finds the first occurrence of a string inside another string (case-sensitive)
+strtolower() - Converts a string to lowercase letters
+strtoupper() - Converts a string to uppercase letters
+trim() - Removes whitespace or other characters from both sides of a string
+ucfirst() - Converts the first character of a string to uppercase
+ucwords() - Converts the first character of each word in a string to uppercase
