@@ -1,0 +1,81 @@
+OOPS Concept
+>> (OOP) language will have object-oriented features such as Abstraction, Encapsulation, Inheritance, polymorphism etc
+>> PHP was primarily based on C++ programming language
+
+Class
+	>> user-defined datatype
+	>> contains variables, properties, and methods
+
+Object
+	>> Objects are created from Classes
+
+Abstraction
+	>> Abstraction is a concept in which implementation details are hidden
+
+	> Abstract Class
+		>> Abstract class are class which contains at least one or more abstract method
+	> Abstract Method
+		>> Abstract method is a method which is declared, but not defined
+
+	>> Classes extending an abstract class must implement all of the abstract methods defined in the abstract class.
+
+Encapsulation
+	>> used to hide the values or state of a structured data object inside a class
+	>> preventing unauthorized parties' direct access to them
+
+Constructor		
+	>> Constructor is a special type of function which will be called automatically whenever there is any object created from a class
+
+Destructor
+	>> Destructor is a special type of function which will be called automatically whenever any object is deleted or goes out of scope
+
+Final Keyword
+	>> Final keyword is applicable to only class and class methods. We cannot declare as Final in PHP.
+	>> So if we declare class method as a Final then that method cannot be override by the child class.
+	>> Same as method if we declare class as a Final then that class cannot be extended any more.
+
+Inheritance
+	>> Accessing the features of one class from another class. 
+	>> If we inherit the class features into another class, we can access both class properties. 
+	>> We can extends the features of a class by using 'extends' keyword.
+	>> PHP supports Single and multilevel inheritance
+	>> PHP does not support multiple inheritance, To achive that we are using interface and Traits concept
+
+Interface
+	>> An interface is similar to a class except that it cannot contain code.
+	>> An interface can define method names and arguments, but not the contents of the methods.
+	>> Any classes implementing an interface must implement all methods defined by the interface.
+	>> A class can implement multiple interfaces.
+	>> An interface is declared using the "interface" keyword.
+
+	interface a
+	interface b
+	class demo implements a,b 
+
+Compile time polymorphism (Static) - Method Overloading
+	>> is defining functions that have similar signatures, yet have different parameters.
+
+Runtime time polymorphism (Dynamic) - Method Overriding
+	>> Same function name with same parameter
+	>> Based on the clas we can access the function
+
+Namespace in PHP
+>> A Namespace in PHP is used to encapsulate the items which are similar to that of abstraction in Object Oriented
+	>> Namespaces are used to establish a relationship among classes, functions, and constants
+	>> It is defined using the keyword The namespace keyword is reserved 
+	>> In PHP for its internal use to avoid conflict with the user created identifiers
+
+
+Php Oops Functions
+	get_class()
+	get_class_vars()
+	get_class_methods()
+
+Access modifiers Or Access Specifiers in PHP:
+
+public 
+>> The property or method can be accessed from everywhere. This is default
+protected 
+>> The property or method can be accessed within the class and by classes derived from that class
+private 
+>> The property or method can ONLY be accessed within the class

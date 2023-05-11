@@ -1,0 +1,274 @@
+What is Javacript?
+>> JavaScript is a popular web scripting language and is used for client-side and server-side development. 
+>> The JavaScript code can be inserted into HTML pages that can be understood and executed by web browsers 
+>> Also supporting object-oriented programming abilities.
+
+What are the various data types that exist in JavaScript?
+>> Boolean - For true and false values
+>> Null - For empty or unknown values
+>> Undefined - For variables that are only declared and not defined or initialized
+>> Number - For integer and floating-point numbers
+>> String - For characters and alphanumeric values
+>> Object - For collections or complex values
+>> Symbols - For unique identifiers for objects
+
+What are the features of JavaScript?
+>> Lightweight, interpreted programming language
+>> Cross-platform compatible
+>> Open-source
+>> Object-oriented
+>> Integration with other backend and frontend technologies
+>> Used especially for the development of network-based applications
+
+What are the advantages of JavaScript over other web technologies?
+>> Enhanced Interaction to otherwise static web pages and makes them react to users’ inputs.
+>> There is no need for a web page to reload when running JavaScript. For example, form input validation.
+>> helps in making the UI of web applications look and feel much better
+>> Has countless frameworks and libraries that are extensively used for developing web applications and games of all kinds.
+
+Object in JavaScript?
+const student = {
+    name: 'John',
+    age: 17
+}
+
+Array in JavaScript?
+var a = [];
+var b = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’];
+
+Built-in methods in JavaScript?
+>> Date() => Returns the present date and time
+>> concat() => Joins two strings and returns the new string
+>> push() => Adds an item to an array
+>> pop() => Removes and also returns the last element of an array
+>> round() => Rounds of the value to the nearest integer and then returns it
+>> length() => Returns the length of a string
+
+Scopes of a variable in JavaScript?
+	Global Scope
+		>> Global variables, having global scope are available everywhere in a JavaScript code.
+	Local Scope
+		>> Local variables are accessible only within a function in which they are defined.
+
+What is the ‘this’ keyword in JavaScript?
+>> The ‘this’ keyword in JavaScript refers to the currently calling object. 
+>> It is commonly used in constructors to assign values to object properties.
+
+Callback in JavaScript?
+>> functions can take other functions as arguments and can also be returned by other functions
+
+Create a cookie?
+>> A cookie is generally a small data that is sent from a website and stored on the user’s machine by a web browser that was used to access the website. 
+>> Cookies are used to remember information for later use and also to record the browsing activity on a website.
+
+	document.cookie = "key1 = value1; key2 = value2; expires = date";
+
+Delete Cookie
+	document.cookie = name + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+
+Difference between let and var?
+>> let can not be redeclared
+>> var can be redeclare
+
+Arrow functions in JavaScript?
+	helloWorld = () => {
+	  console.log("hello world!");
+	};
+
+Different ways an HTML element can be accessed in a JavaScript code?
+>> getElementByClass(‘classname’): Gets all the HTML elements that have the specified classname.
+>> getElementById(‘idname’): Gets an HTML element by its ID name.
+>> getElementbyTagName(‘tagname’): Gets all the HTML elements that have the specified tagname.
+>> querySelector(): Takes CSS style selector and returns the first selected HTML element.
+
+Imports and Exports in JavaScript?
+>> Imports and exports help in writing modular code for our JavaScript applications. 
+>> With the help of imports and exports, we can split a JavaScript code into multiple files in a project. 
+>> This greatly simplifies the application source code and encourages code readability.
+
+Document and Window in JavaScript?
+>> The document comes under the windows object and can also be considered as its property.
+>> Window in JavaScript is a global object that holds the structure like variables, functions, location, history, etc
+
+JavaScript frameworks and their uses?
+>> Has a collection of many frameworks that aim towards fulfilling the different aspects of the web application development process. 
+	Some of the prominent frameworks are:
+		React - Frontend development of a web application
+		Angular - Frontend development of a web application
+		Node - Backend or server-side development of a web application
+
+Undefined and Undeclared and Null in JavaScript?
+>> Undefined means a variable has been declared but a value has not yet been assigned to that variable
+>> Variables that are not declared or that do not exist in a program or application.
+>> Null is an assignment value that we can assign to any variable that is meant to contain no value
+
+Session storage and Local storage?
+>> The data stored in session storage gets expired or deleted when a page session ends
+>> Websites store some data in local machine to reduce loading time; this data does not get deleted at the end of a browsing session.
+
+Call and Apply?
+>> Call uses arguments separately
+	function sayHello()
+	{
+	  return "Hello " + this.name;
+	}   
+	var obj = {name: "Sandy"};      
+	sayHello.call(obj);
+
+>> Apply uses an argument as an array
+	function saySomething(message)
+	{
+	  return this.name + " is " + message;
+	}       
+	var person4 = {name:  "John"};
+	saySomething.apply(person4, ["awesome"]);
+
+Passed by value and passed by reference
+
+var a = 432;
+var b = a;
+
+var obj = { name: "Raj", surname: "Sharma" };
+var obj2 = obj;
+
+Strict-mode
+	>> Strict mode does not allow duplicate arguments and global variables.
+	>> One cannot use JavaScript keywords as a parameter or function name in strict mode.
+	>> All browsers support strict mode. 
+	>> Strict mode can be defined at the start of the script with the help of the keyword ‘use strict’. 
+
+exec () and test () methods
+	exec()
+		>> It is an expression method in JavaScript that is used to search a string with a specific pattern. 
+		>> Once it has been found, the pattern will be returned directly, otherwise, it returns an “empty” result.
+	test () 
+		>> It is an expression method in JavaScript that is also used to search a string with a specific pattern or text. 
+		>> Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’. 
+
+External JavaScript
+	>> External Javascript allows web designers and developers to collaborate on HTML and javascript files.
+	>> It also enables you to reuse the code.
+	>> External javascript makes Code readability simple. 
+
+Types of errors in javascript
+	>> Syntax Errors
+		missing a closing parenthesis
+
+	>> Reference Error
+		console.log(x);
+		ReferenceError: x is not defined
+
+	>> Runtime Errors
+		missing of functions
+
+	>> Logical Error
+		try {
+	         // Code to run
+	         [break;]
+	      } 
+	      
+	      catch ( e ) {
+	         // Code to run if an exception occurs
+	         [break;]
+	      }
+	      
+	      [ finally {
+	         // Code that is always executed regardless of 
+	         // an exception occurring
+	      }]
+
+What is memoization?
+	>> when we want to cache the return value of a function concerning its parameters, it is called memoization. 
+	>> It is used to speed up the application especially in case of complex, time consuming functions. 
+
+Recursion in a programming language
+	Recursion is a technique in a programming language that is used to iterate over an operation whereas a function calls itself repeatedly until we get the result.
+
+client-side and server-side
+	Client-side JavaScript
+		>> Client-side JavaScript is made up of fundamental language and predefined objects that perform JavaScript in a browser. 
+		>> Also, it is automatically included in the HTML pages where the browser understands the script.
+	Server-side Javascript 
+		>> Server-side JavaScript is quite similar to Client-side javascript.
+		>> Server-side JavaScript can be executed on a server. 
+		>> The server-side JavaScript is deployed once the server processing is done.
+
+Promises in JavaScript
+	Pending
+		>> It is the initial state of promise where it is in the pending state that neither is fulfilled nor Rejected
+	Fulfilled
+		>> has been fulfilled that assures that the async operation is done
+	Rejected
+		>> rejected and the async operation has failed.
+	Settled
+		>> where the promise is rejected or fulfilled.
+
+		function sumOfThreeElements(...elements)
+		{
+		  return new Promise((resolve,reject)=>{
+		    if(elements.length > 3 ){
+		      reject("Just 3 elements or less are allowed");
+		    }
+		    else{
+		      let sum = 0;
+		      let i = 0;
+		      while(i < elements.length){
+		        sum += elements[i];
+		        i++;
+		      }
+		      resolve("Sum has been calculated: "+sum);
+		    }
+		  })
+		}
+
+What is WeakSet?
+	>> A WeakSet is a collection of garbage-collectable values, including objects and non-registered symbols
+
+What is a WeakMap?
+allows associating data to objects in a way that doesn't prevent the key objects from being collected, even if the values reference the keys
+
+Temporal Dead Zone?
+>> A let or const variable is said to be in a "temporal dead zone" (TDZ) from the start of the block until code execution reaches the line where the variable is declared and initialized
+
+JavaScript Design patterns
+	>> When we build JavaScript browser applications, there might be chances to occur errors where JavaScript approaches it in a repetitive manner. 
+	>> This repetitive approach pattern is called JavaScript design patterns. 
+	>> JavaScript design patterns consist of 
+
+	Creational Design Pattern, 
+		>> Single Ton
+	Structural Design Pattern, 
+
+	Behavioral Design patterns.
+
+How to detect the OS of the client machine using JavaScript?
+	>> navigator.appVersion
+
+Requirement of debugging in JavaScript
+	>> We can debug in JavaScript with the help of two methods, console.log() and debugger keyword. 
+
+pop-up boxes available in JavaScript?
+	>> Pop-up boxes available in JavaScript are Alert Box, Confirm Box, and Prompt Box.
+
+Event Capturing and Event Bubbling?
+>> This process starts with capturing the event of the outermost element and then propagating it to the innermost element.
+>> This process starts with capturing the event of the innermost element and then propagating it to the outermost element.
+
+
+Implicit Type Coercion in javascript.
+	>> Implicit type coercion in javascript is the automatic conversion of value from one data type to another. 
+	>> It takes place when the operands of an expression are of different data types.
+
+	String coercion
+		x - y
+	Boolean Coercion
+	Logical operators:
+
+Closures in JavaScript.
+	>> Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
+
+What do you mean by BOM?
+	>> Browser Object Model is known as BOM. 
+	>> It allows users to interact with the browser. A browser's initial object is a window. 
+	>> As a result, you may call all of the window's functions directly or by referencing the window. 
+	>> The document, history, screen, navigator, location, and other attributes are available in the window object.
