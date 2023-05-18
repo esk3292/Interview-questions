@@ -1,0 +1,95 @@
+What is RxJS?
+>> RxJS is a library for reactive Streams which can be used to deal with asynchronous data streams and events called 
+>> "Reactive Extensions for JavaScript" (RxJS).
+>> RxJS uses JavaScript reactive programming. 
+>> RxJS is very popular because it makes writing asynchronous code simple for developers.
+
+What is stream in RxJs?
+>> Stream in RxJs is asynchronous data emitted from observables.
+
+What are observables and observers?
+>> Iin order to access the async stream it has to be exposed as a rxJs Observable object. 
+>> The listener who is interested in accessing the Observable stream is exposed as an observer.
+>> In simple word observable represents async stream of data and observer subscribes to the observable to receive the stream.
+
+What is the use of subscribe in RxJs?
+>> "Subscribe" function starts the stream from observable to the observer function. 
+>> So when data is streamed from Observable its received by the Listener function.
+
+var observ = Observable.create(AsyncStream);
+observ.subscribe(res=>Listener(res));
+function Listener(res)
+    console.log(res);
+}
+
+How to unsubscribe from the stream?
+>> We need to get reference of the "subscription" object. 
+>> To unsubscribe we can call "unsubscribe" on the "subscription" object.
+
+var subscription = observ.subscribe(res=>Listener(res));
+subscription.unsubscribe();
+
+What are operators in RxJs?
+>> Operators are logics which manipulate an observable stream and create new observable streams.
+
+var stream1 = Observable.create(AsyncStream);
+var stream2 = stream1.pipe(map(x=>Math.round(x)));
+var stream3 = stream2.pipe(filter(x=>x>3));
+stream3.subscribe(res=>Listener(res));
+function Listener(res)
+    console.log(res);
+    
+}
+
+Where did you use RxJs in Angular?
+>> Most of the times rxJs is used in http calls with angular. 
+>> As http streams asynchronous data we can subscribe , apply filters to the http streams.
+
+var  stream1 = httpc.get("https://www.myapi.com/somedata");
+ var stream2 = stream1.pipe(filter(x=>x>3));
+ stream2.subscribe(res=>this.Success(res),res=>this.Error(res));
+
+Differentiate between RxJs and Promises?
+>> RxJs	
+	>> Observable return stream of data.
+	>> You can subscribe and unsubscribe stream.
+
+>> Promise
+	>> Promise return single value.
+	>> You cannot cancel a promise.
+
+Name some rxJs Operators?
+>> Map :- 
+	>> Transforms data in a observable in to a different format.
+>> Filter :- 
+	>> Allows data which meets conditions.
+>> Merge :- 
+	>> This operator will combine multiple Observables into one. So if one of the observables emit a value the combined one will emit as well.
+>> Concat :- 
+	>> only when observable completes, it will start with the next observable.
+>> From :- 
+	>> This operator will turn array, promise or iterable into an observable.
+>> debouncetime :- 
+	>> discard emitted values if a certain time didn't pass between the last input
+>> distinctuntilchanged :- 
+	>> only emits a value if it is different than the last one.
+>> pluck :- 
+	>> select a property to emit.
+>> delay :- 
+	>> emits a value with a delay.
+
+What is Subject?
+>> Subjects are special types of Observers, 
+>> so you can also subscribe to other Observables and listen to published data
+
+different types of Subject?
+>> BehaviorSubject and ReplaySubject.
+
+different between of Subject, BehaviorSubject and ReplaySubject?
+>> Subject:
+	>> Old data will not receive to the new subscribe observers
+>> ReplaySubject :
+	>> Observers who are subscribed will receive all the old data values issued prior to their subscription
+	>> a buffer that holds the values emitted and re-emits (replaying) a sequence of old values once new Observers are subscribed.
+>> BehaviorSubject :
+	>> similar to ReplaySubject but only re-issues the last emitted value (current value).
